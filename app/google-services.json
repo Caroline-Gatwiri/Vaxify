@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128756534442",
+    "project_id": "vaxify-d0cf5",
+    "storage_bucket": "vaxify-d0cf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128756534442:android:c695228166b607ab67d4d3",
+        "android_client_info": {
+          "package_name": "com.twish.vaxify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128756534442-9rfr97u232754mcisue35sesp8dui9qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQyONl44g1iBpice93kqA49oCWNDHqleo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128756534442-9rfr97u232754mcisue35sesp8dui9qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
