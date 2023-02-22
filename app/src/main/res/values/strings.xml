@@ -10,4 +10,6 @@
     <string name="age">Age</string>
     <string name="child_name">Name</string>
     <string name="submit">SUBMIT</string>
+    <string name="already_signed_up">Already signed up?</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>

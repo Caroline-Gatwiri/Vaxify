@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="100dp"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,9 +42,8 @@
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_sign_up_email"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:drawableStart="@drawable/ic_baseline_email_24"
-                android:hint="Email"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:maxLength="32"
                 android:maxLines="1"
@@ -63,7 +62,7 @@
                 android:id="@+id/et_sign_up_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:maxLines="1"
@@ -83,7 +82,7 @@
                 android:id="@+id/et_sign_up_confirm_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_password"
                 android:inputType="textPassword"
                 android:maxLength="16"
                 android:maxLines="1"
@@ -96,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
             android:elevation="0dp"
-            android:text="PROCEED"
+            android:text="@string/proceed"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -110,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already signed up?" />
+                android:text="@string/already_signed_up" />
 
             <TextView
                 android:id="@+id/tv_log_in"
