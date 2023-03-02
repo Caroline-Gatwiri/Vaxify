@@ -12,4 +12,8 @@
     <string name="submit">SUBMIT</string>
     <string name="already_signed_up">Already signed up?</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="name">Child\'s Name</string>
+    <string name="required">required</string>
+    <string name="phone">Phone</string>
+
 </resources>
