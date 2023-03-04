@@ -31,7 +31,7 @@
         app:layout_constraintLeft_toLeftOf="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.034">
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textNameField"
@@ -54,7 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/inputLayout"
-        app:layout_constraintVertical_bias="0.045">
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textBirthField"
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="336dp"
+        android:layout_marginBottom="388dp"
         android:hint="@string/age"
         app:helperText="@string/required"
         app:helperTextTextColor="@color/purple_700"
@@ -95,7 +95,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guardianName"
-        app:layout_constraintVertical_bias="0.146">
+        app:layout_constraintVertical_bias="0.044">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneId"
