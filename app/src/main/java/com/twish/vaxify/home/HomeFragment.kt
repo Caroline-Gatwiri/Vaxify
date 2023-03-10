@@ -105,6 +105,44 @@ class HomeFragment : Fragment() {
             // Do nothing
         }
     }
+        val spinnerVaccine = binding.vaccine
+        // Initialize the adapter with data for the spinner
+        val vaccineSpinnerAdapter = ArrayAdapter(
+            requireContext(),
+            androidx.transition.R.layout.support_simple_spinner_dropdown_item,
+            listOf(
+                "1",
+                "6 ",
+                "10 weeks",
+                "14 weeks",
+                "9 months",
+                "18 months",
+                "6 years",
+                "10 years"
+            )
+        )
+
+        // Set the dropdown style
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // Attach the adapter to the spinner
+        spinnerVaccine.adapter = vaccineSpinnerAdapter
+
+        spinnerVaccine.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?, view: View?, position: Int, id: Long
+            ) {
+                // Handle the selection
+                val selectedItem = vaccineSpinnerAdapter.getItem(position)
+                Toast.makeText(requireContext(), "Selected: $selectedItem", Toast.LENGTH_SHORT)
+                    .show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Do nothing
+            }
+        }
+
     }
 }
 

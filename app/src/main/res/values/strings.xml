@@ -14,9 +14,14 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="name">Child\'s Name</string>
     <string name="required">required</string>
-    <string name="phone">Phone</string>
+    <string name="phone">Guardian Phone</string>
     <string name="vaccination_information_form">Vaccination Information Form</string>
     <string name="select_age">Select Age</string>
     <string name="select_location">Select Location</string>
+    <string name="guardian_name">Guardian Name</string>
+    <string name="select_vaccine">Select Vaccine</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="select_gender">Select Gender</string>
 
 </resources>
