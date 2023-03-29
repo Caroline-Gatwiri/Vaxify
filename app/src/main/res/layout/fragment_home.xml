@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".app.MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/toolbar"
@@ -144,59 +143,27 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <TextView
-            android:id="@+id/vaccineId"
-            android:layout_width="158dp"
-            android:layout_height="25dp"
-            android:text="@string/select_vaccine"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.075"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="44dp" />
-
-        <Spinner
-            android:id="@+id/vaccine"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="215dp" />
-
-
-    </LinearLayout>
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitButton"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.695" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="114dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -215,12 +182,42 @@
         android:id="@+id/textView3"
         android:layout_width="157dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/select_gender"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View vaccine details here" />
+
+        <TextView
+            android:id="@+id/tvVaccines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:text="Vaccine"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

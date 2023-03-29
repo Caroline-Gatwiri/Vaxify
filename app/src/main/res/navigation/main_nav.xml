@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/signUpFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/logInFragment"
@@ -22,8 +22,12 @@
     <fragment
         android:id="@+id/homeFragment"
         tools:layout="@layout/fragment_home"
-        android:name="com.twish.vaxify.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:name="com.twish.vaxify.presentation.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_retrieveFragment"
+            app:destination="@id/retrieveFragment" />
+    </fragment>
 
     <fragment
         tools:layout="@layout/fragment_sign_up"
@@ -37,4 +41,9 @@
             android:id="@+id/action_signUpFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/retrieveFragment"
+        android:name="com.twish.vaxify.presentation.retrieve.RetrieveFragment"
+        android:label="fragment_retrieve"
+        tools:layout="@layout/fragment_retrieve" />
 </navigation>
