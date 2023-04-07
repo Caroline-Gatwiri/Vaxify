@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.twish.vaxify.app.AgeGroupAdapter
 import com.twish.vaxify.databinding.FragmentRetrieveBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -28,8 +29,16 @@ class RetrieveFragment : Fragment() {
 
         viewModel.getAllVaccines()
 
+        val ageGroupAdapter = AgeGroupAdapter()
+        binding.recyclerView.apply {
+            adapter = ageGroupAdapter
+        }
+
         viewModel.vaccinesResponse.observe(viewLifecycleOwner){ data ->
-            binding.tvTemp.text = data.toString()
+           if (data.isNotEmpty()){
+               ageGroupAdapter.updateData(data)
+               ageGroupAdapter.notifyDataSetChanged()
+           }
         }
     }
 }

@@ -7,9 +7,9 @@ import retrofit2.http.POST
 
 interface ApiService {
     @GET("api/vaccines")
-   suspend fun getAllVaccines(): VaccinesResponseDto
+    suspend fun getAllVaccines(): VaccinesResponseDto
 
-   // use POST to push data
-   @POST("/api/child")
-   fun requestLogin(@Body requestModel: RequestModel) :Call<ChildDetailsModel>
+    // use POST to push data
+    @POST("/api/child")
+    fun postRequestModel(@Body childModel: ChildModel): Call<ChildModel>
 }
