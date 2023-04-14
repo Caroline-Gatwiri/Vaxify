@@ -13,7 +13,7 @@ class AgeGroupAdapter: RecyclerView.Adapter<AgeGroupAdapter.ViewHolder>() {
         ageGroupList = newList
     }
 
-    class ViewHolder(val listItem: ListVaccinesBinding) : RecyclerView.ViewHolder(listItem.root) {
+    class ViewHolder(private val listItem: ListVaccinesBinding) : RecyclerView.ViewHolder(listItem.root) {
         fun bind(item: AgeGroupDto) {
             listItem.ageId.text = "Age: " + item.age
             item.vaccines.forEach { vaccine ->
